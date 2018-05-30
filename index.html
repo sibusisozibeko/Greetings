@@ -6,9 +6,9 @@
   <title></title>
   <link rel="stylesheet" href="greet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
+<div class="container">
 <body>
 <h1>Greetings</h1>
 
@@ -16,25 +16,34 @@
 <label>Name</label>
  <input id="myTextarea"></input>
 </div>
-<div class="count">
-</div>
-
+<!-- <div class="count">0</div> -->
+<div class="">counter: <i class="count">0</i> </div>
 <div class="radioz">
+  <label for="y">English</label>
     <input type="radio" class="radios" name="radioz" value="English" class ="radioz" />
-    <label for="y">English</label>
-    <input type="radio" class="radios" name="radioz" value="Afrikaans" class ="radioz" />
     <label for="z">Afrikaans</label>
+    <input type="radio" class="radios" name="radioz" value="Afrikaans" class ="radioz" />
+      <label for="z">IsXhosa</label>
     <input type="radio" class="radios" name="radioz" value="IsiXhosa" class ="radioz" />
-    <label for="z">IsiXhosa</label>
+
 </div>
 
 <div class="button1">
 <button type="button" onclick="" class="btnGreet">Greet Me</button>
+<button type="reset" onclick="" class="Reseting" value="Reseting">Reset</button>
+
 </div>
+
+
+
+
+
+
 <div class ='displaying'></div>
 <div class='display'></div>
 
 <script src="greet.js"></script>
 <script src="greetdom.js"></script>
+</div>
 </body>
 </html>

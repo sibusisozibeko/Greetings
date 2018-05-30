@@ -1,40 +1,65 @@
 
+.count{
+  color: red;
+
+}
 body{
   background-color: lightblue;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+/* margin-left: 450px;*/
+  font-size: 200%;
 }
 label {
     display:inline-block;
+
       /* for IE7*/
                 /* for IE7*/
 
     padding-top: 20px;
 }
 
-.button1{
-  padding-top: 30px;
-
-
+.btnGreet{
+  width: 100px;
+  height: 30px;
+background-color: green;
+margin: 50px;
 
 }
 .textareas {
+  padding-top: 20px;
+
   width: 300px;
-  height: 50px;
+  height: 70px;
+/*padding-left: 500px;*/
 }
 
-/*  *
+.Reseting{
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  margin: 50px;
+
+}
+
+
 .radios {
+  padding-left: 20px;
 
   margin-left: auto;
     margin-right: auto;
     display :inline-block;
-
 }
 
+@media screen and (max-width: 992px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
-
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 2px 0 0 2px;
+@media screen and (max-width: 486px) {
+  body {
+    background-color: lightblue;
+  }
 }
