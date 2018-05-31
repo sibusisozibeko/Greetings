@@ -17,11 +17,11 @@ function btnClicked() {
   var names = enteredElement.value.toUpperCase();
 
 if (!radioz) {
-return displayElement.innerHTML="please select language"
+displayElement.innerHTML="please select language"
 
 }
 
-if (names =="") {
+if (names ==="") {
 return displayElement.innerHTML="please enter name"
 
 }
