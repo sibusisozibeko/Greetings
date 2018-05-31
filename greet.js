@@ -14,7 +14,7 @@ function greetedNames(language, name) {
       namesGreeted[name] = 0;
     }  //update the DOM to display the counter
     }
-   if (language === 'IsXhosa') {
+   if (language === 'IsiXhosa') {
     // greetingz === 'Molo ' + name
     return 'Molo, ' + name
 
@@ -32,15 +32,17 @@ function greetedNames(language, name) {
   }
 
 
+
 }
 function getGreetingNames(){
   return namesGreeted;
 }
-console.log(namesGreeted);
+//console.log(namesGreeted);
+
 function countNames() {
 return Object.keys(namesGreeted).length;
 }
-console.log(countNames());
+//console.log(countNames());
 
 function clearBtn(){
   return namesGreeted = {};

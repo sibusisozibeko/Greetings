@@ -16,13 +16,24 @@ var newGreetings = NamesGreeted();
 function btnClicked() {
   var names = enteredElement.value.toUpperCase();
 
+if (!radioz) {
+return displayElement.innerHTML="please select language"
+
+}
+
+if (names =="") {
+return displayElement.innerHTML="please enter name"
+
+}
+
+
 //   console.log(names)
 var clicking = document.querySelector("input[name='radioz']:checked");
 //console.log(clicking)
 
 if (clicking){
   var radioz = clicking.value;
- console.log(radioz);
+ //console.log(radioz);
 var selectedRadio = newGreetings.greets(radioz, names);
 displayElement.innerHTML = selectedRadio;
 //displayCount.innerHTML = newGreetings.countNames();

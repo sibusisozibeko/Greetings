@@ -2,7 +2,7 @@ describe('The namesGreeted function', function(){
 
     it('must show that a person is greeted in IsiXhosa ', function(){
       var greeted = NamesGreeted();
-      assert.equal("Molo, Sbu", greeted.greets("IsXhosa", "Sbu"));
+      assert.equal("Molo, Sbu", greeted.greets("IsiXhosa", "Sbu"));
     });
 
     it('must show that a person is greeted in English  ', function(){
@@ -19,10 +19,10 @@ describe('The namesGreeted function', function(){
 
         it('must count the number of names greeted and I expect three people to be gereeted ', function(){
           var greeted = NamesGreeted();
-          greeted.greets("IsXhosa", "Sbu");
-          greeted.greets("IsXhosa", "Ace");
-          greeted.greets("IsXhosa", "Ace");
-          greeted.greets("IsXhosa", "Akhona");
+          greeted.greets("IsiXhosa", "Sbu");
+          greeted.greets("IsiXhosa", "Ace");
+          greeted.greets("IsiXhosa", "Ace");
+          greeted.greets("IsiXhosa", "Akhona");
 
           assert.equal(3,  greeted.counts());
         });
