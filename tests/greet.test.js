@@ -36,7 +36,7 @@ describe('The namesGreeted function', function(){
           assert.equal(2,  greeted.counts());
         });
 
-it('must factory function when it is called with a Map of names', function(){
+it('must test a factory function when it is called with a Map of names', function(){
         var namesGreeted = NamesGreeted()
         namesGreeted.greets("English", "sbu");
         namesGreeted.greets("English", "lilo");
