@@ -17,7 +17,7 @@ describe('The namesGreeted function', function(){
 
 
 
-        it('must count the number of names greeted and I expect three people to be gereeted ', function(){
+        it('must count the number of names greeted and I expect three people to be greeted ', function(){
           var greeted = NamesGreeted();
           greeted.greets("IsiXhosa", "Sbu");
           greeted.greets("IsiXhosa", "Ace");
@@ -26,7 +26,7 @@ describe('The namesGreeted function', function(){
 
           assert.equal(3,  greeted.counts());
         });
-        it('must count the number of names greeted and I expect two people to be gereeted', function(){
+        it('must count the number of names greeted and I expect two people to be greeted', function(){
           var greeted = NamesGreeted();
           greeted.greets("English", "sbu");
           greeted.greets("English", "lilo");
@@ -35,4 +35,12 @@ describe('The namesGreeted function', function(){
 
           assert.equal(2,  greeted.counts());
         });
-  });
+
+it('must factory function when it is called with a Map of names', function(){
+        var namesGreeted = NamesGreeted()
+        namesGreeted.greets("English", "sbu");
+        namesGreeted.greets("English", "lilo");
+
+        assert.deepEqual(({"sbu" : 0, "lilo" : 0}),  namesGreeted.getGreetingNames());
+        });
+});

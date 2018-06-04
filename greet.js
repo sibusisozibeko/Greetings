@@ -31,9 +31,8 @@ function greetedNames(language, name) {
 
   }
 
-
-
 }
+
 function getGreetingNames(){
   return namesGreeted;
 }
