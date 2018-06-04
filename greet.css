@@ -52,14 +52,13 @@ margin: 50px;
     display :inline-block;
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    background-color: lightblue;
-  }
+@media(max-width: 400px) {
+  .h1{
+    width: 100%;
+    font-size: 16px;
 }
-
-@media screen and (max-width: 486px) {
-  body {
-    background-color: lightblue;
+  .textareas{
+    width: 100%;
+    font-size: 16px;
   }
 }

@@ -12,7 +12,10 @@ var thatStores = localStorage.getItem('users');
 var nameentered = thatStores ? JSON.parse(thatStores) : {};
 
 
-var newGreetings = NamesGreeted();
+
+var newGreetings = NamesGreeted(nameentered);
+countElement.innerHTML = newGreetings.counts();
+
 function btnClicked() {
   var names = enteredElement.value.toUpperCase();
 
@@ -33,11 +36,14 @@ var clicking = document.querySelector("input[name='radioz']:checked");
 
 if (clicking){
   var radioz = clicking.value;
+
  //console.log(radioz);
 var selectedRadio = newGreetings.greets(radioz, names);
 displayElement.innerHTML = selectedRadio;
 //displayCount.innerHTML = newGreetings.countNames();
 //newGreetings.greetedNames().toUpperCase();
+
+
 localStorage.setItem('users', JSON.stringify(newGreetings.getGreetingNames()));
 localStorage.setItem('counter', JSON.stringify(newGreetings.counts()));
 
