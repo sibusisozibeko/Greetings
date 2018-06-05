@@ -37,10 +37,14 @@ describe('The namesGreeted function', function(){
         });
 
 it('must test a factory function when it is called with a Map of names', function(){
-        var namesGreeted = NamesGreeted()
-        namesGreeted.greets("English", "sbu");
-        namesGreeted.greets("English", "lilo");
-
+        var namesGreeted = NamesGreeted(({"sbu" : 0, "lilo" : 0}));
         assert.deepEqual(({"sbu" : 0, "lilo" : 0}),  namesGreeted.getGreetingNames());
         });
+
+        it('must test when two names are greeted and expect them to appear on the Map  ', function(){
+        var namesGreeted = NamesGreeted(({"sbu" : 0, "lilo" : 0}))
+        namesGreeted.greets("English", "Aya");
+        namesGreeted.greets("English", "Siyo");
+         assert.deepEqual(({ "sbu": 0, "lilo": 0, "Aya": 0, "Siyo": 0 }),  namesGreeted.getGreetingNames());
+                });
 });
